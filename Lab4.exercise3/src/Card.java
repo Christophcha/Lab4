@@ -11,21 +11,23 @@ public class Card {
 	public Card() {
 		Random rand = new Random();
 
+		//pulls a random index from the arrays
 		this.suitIndex = rand.nextInt(SUITS.length);
 		this.faceValueIndex = rand.nextInt(FACE_VALUES.length);
 	}
 
 	public String toString() {
-		return FACE_VALUES[faceValueIndex] + " of " + SUITS[suitIndex];
+		return FACE_VALUES[faceValueIndex] + " of " + SUITS[suitIndex]; 
 	}
 
 	public static void main(String[] args) {
 
 		System.out.println("Your five random cards are: ");
 		
+		//run until 5 cards are printed
 		for (int i = 0; i < 5; i++) {
 			Card card = new Card();
-			System.out.println(card.toString());
+			System.out.println(card.toString()); //calls toString that prints the random cards
 		}
 
 	}
