@@ -10,15 +10,16 @@ public class Account {
 		Account object3 = new Account();
 		Account object4 = new Account();
 		Account object5 = new Account();
+		Account object6 = new Account();
 		
-		System.out.println(getNumAccounts()); 
+		System.out.println(getNumAccounts()); //prints out number of accounts
 	}
 	
 	public static int getNumAccounts() {
 		return numAccounts;
 	}
 	public Account(){
-		numAccounts = numAccounts+1;
+		numAccounts = numAccounts+1; //add 1 per acc
 	}
 
 	

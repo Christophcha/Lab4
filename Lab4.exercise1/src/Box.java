@@ -27,7 +27,7 @@ public class Box {
 		//uses nested for loops to print a row of 5 stars, 5 times.
 		for(int i = 0; i < size; i++) {
 			for(int j = 0; j < size; j++) {
-				System.out.print("c");
+				System.out.print(c);
 			}					
 			System.out.println(); //adds a new line every time 5 stars are printed.
 		}
